@@ -24,8 +24,14 @@ public class MyHashTable {
 	public static void main(String[] args) {
 		Hashtable<String, Integer> hashtable = new Hashtable<String, Integer>();
 
-		System.out.println("Frequency count for Sentence 1 \nTo be or not to be");
-		String string = "To be or not to be";
-		countWordFreq(hashtable, string);
+		System.out.println("\nFrequency count for Sentence 2 \n"
+				+ "Paranoids are not paranoid because they are paranoid but because they keep "
+				+ "putting themselves deliberately into paranoid avoidable situations ");
+		String string1 = "Paranoids are not paranoid because they are paranoid but because they keep "
+				+ "putting themselves deliberately into paranoid avoidable situations";
+		countWordFreq(hashtable,string1);
+
+		System.out.println("\n \nValue for that word which is removed: "+hashtable.remove("avoidable"));
+		System.out.println(hashtable);
 	}
 }
